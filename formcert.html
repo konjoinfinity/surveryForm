@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>freeCodeCamp Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id='title'>freeCodeCamp Survey</h1>
+    <p id='description'>Thank you for taking the time to help us improve the platform</p>
+    <form method="post" action='https://register-demo.freecodecamp.org' id='survey-form'>
+        <label for="name" id='name-label'>Enter Your Name: <input id="name" name="name" type="text" required placeholder='Name' /></label>
+        <label for="email" id='email-label'>Enter Your Email: <input id="email" name="email" type="email" required placeholder='johnsmith@gmail.com' /></label>
+        <label for="number" id='number-label'>Age (years) - *Optional*: <input id="number" type="number" name="number" min="13" max="120" placeholder='21' /></label>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value='account-type' /> Personal Account</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value='account-type' /> Business Account</label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value='agreeornot' /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+        <label for="not-accept">
+          <input id="not-accept" type="checkbox" required name="not-accept" class="inline" value='agreeornot' /> I DO NOT accept the terms and conditions.
+        </label>
+        
+        <label for="referrer">How did you hear about us?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+       <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+    </form>
+  </body>
+</html>
